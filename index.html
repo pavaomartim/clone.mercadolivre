@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Livre do Martim</title>
+    <link rel="icon" href="imagens/logo-mini.svg" type="image/x-icon">
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- barra de navegacao -->
+    <div class="container">
+        <div class="barradenavegacao cardnav">
+            <div class="areabarranav">
+                <div class="mrg mrgtop arealogo">
+                    <a href="index.html">
+                        <img src="imagens/logo-principal.png" alt="logo" id="imglogo">
+                    </a>
+                </div>
+                <div class="mrg mrgtop areabarradepesquisa">
+                    <input type="text" name="barradepesquisa" id="barradepesquisa"
+                        placeholder="Buscar produtos, marcas e muito mais..." maxlength="120">
+                    <button id="btnlupa">
+                        <img id="imglupa" src="imagens/lupa.png" alt="lupa">
+                    </button>
+                </div>
+                <div class="mrg mrgtop areamlplay">
+                    <a href="index.html">
+                        <img src="imagens/mercadoplay.png" alt="mercadoplay" id="imgmlplay">
+                    </a>
+                </div>
+            </div>
+
+            <div class="areabarranav mrgtop">
+                <div class="arealocalizacao">
+                    <div id="imglocalizacao">
+                        <img src="imagens/localizacao.png" alt="localizacao" style="justify-content: center;">
+                    </div>
+                    <div>
+                        <input type="text" name="barradeendereço" id="arealocalizacao" placeholder="Digite seu endereço"
+                            maxlength="120">
+                    </div>
+                </div>
+                <div class="areamenu">
+                    <p class="txtmenu">Categorias</p>
+                    <p class="txtmenu">Ofertas</p>
+                    <p class="txtmenu">Histórico</p>
+                    <p class="txtmenu">Vender</p>
+                    <p class="txtmenu">Contato</p>
+                </div>
+                <div class="areacompra">
+                    <div class="blocoareacompra">
+                        <p class="txtcompra">Criar conta</p>
+                    </div>
+
+                    <div class="blocoareacompra">
+                        <p class="txtcompra">Entrar</p>
+                    </div>
+
+                    <div class="blocoareacompra">
+                        <p class="txtcompra">Compras</p>
+                    </div>
+
+                    <div id="imgcarrinho">
+                        <img src="imagens/carrinhodecompras.png" alt="carrinho" class="tamanhocarrinho">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- slider -->
+    <div>
+        <ul class="slider">
+            <li>
+                <input type="radio" id="slide1" name="slide" checked>
+                <label for="slide1"></label>
+                <img src="imagens/slide1.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide2" name="slide">
+                <label for="slide2"></label>
+                <img src="imagens/slide2.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide3" name="slide">
+                <label for="slide3"></label>
+                <img src="imagens/slide3.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide4" name="slide">
+                <label for="slide4"></label>
+                <img src="imagens/slide4.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide5" name="slide">
+                <label for="slide5"></label>
+                <img src="imagens/slide5.png" />
+            </li>
+        </ul>
+    </div>
+
+    <br> <br> <br> <br>
+
+    <!-- card redondo -->
+    <div class="container2">
+        <div class="areacardredondo mrgcardredondo">
+            <div class="areacardredondo2">
+                <img class="imgcardredondo" src="imagens/mercadopago.png">
+                <span class="infocardredondo categoria">Mercado Pago</span>
+            </div>
+            <div class="areacardredondo2">
+                <img class="imgcardredondo" src="imagens/cupons.png">
+                <span class="infocardredondo categoria">Cupons</span>
+            </div>
+            <div class="areacardredondo2">
+                <img class="imgcardredondo" src="imagens/criarconta.png">
+                <span class="infocardredondo categoria">Criar conta</span>
+            </div>
+            <div class="areacardredondo2">
+                <img class="imgcardredondo" src="imagens/entrar.png">
+                <span class="infocardredondo categoria">Entrar</span>
+            </div>
+            <div class="areacardredondo2">
+                <img class="imgcardredondo" src="imagens/compras.png">
+                <span class="infocardredondo categoria">Compras</span>
+            </div>
+            <div class="areacardredondo2">
+                <img class="imgcardredondo" src="imagens/vermais.png">
+                <span class="infocardredondo categoria">Ver mais</span>
+            </div>
+        </div>
+    </div>
+
+    <br> <br> <br>
+
+    <!-- card ofertas em destaque -->
+    <div class="container3">
+        <div>
+            <p><br>  OFERTAS EM DESTAQUE 🔥
+            </p>
+        </div>
+        <div class="areaproduto">
+            <div class="cardproduto">
+                <div class="areaimgofertas"><img class="imgcardofertas" src="imagens/produto1.png"></div>
+                <p class="valororiginal">R$ 199</p>
+                <p class="valorpromo">R$ 159<sup>90</sup><span class="txtverde">20% OFF</span></p>
+                <p class="fretegratis">Frete grátis <img class="imgraio" src="imagens/iconeraio.png"><span
+                        class="txtfull">FULL</span></p>
+                <p class="inforproduto">
+                    Mini Soprador De Ar Portátil Usb Recarregável Bivolt Vedo</p>
+            </div>
+            <div class="cardproduto">
+                <div class="areaimgofertas"><img class="imgcardofertas" src="imagens/produto2.png"></div>
+                <button class="btnoferta">OFERTA DO DIA</button>
+                <p class="valororiginal">R$ 299</p>
+                <p class="valorpromo">R$ 199<sup>90</sup><span class="txtverde">23% OFF <br>6x R$
+                        33<sup>32</sup>
+                        sem
+                        juros</span></p>
+                <p class="fretegratis">Frete grátis <img class="imgraio" src="imagens/iconeraio.png"><span
+                        class="txtfull">FULL</span></p>
+                <p class="inforproduto">
+                    Cabo Extensor Premium 24p Pichau Ps100, Rgb, 240mm, Branco</p>
+            </div>
+            <div class="cardproduto">
+                <div class="areaimgofertas"><img class="imgcardofertas" src="imagens/produto3.png "></div>
+                <p class="valororiginal">R$ 829</p>
+                <p class="valorpromo">R$ 538<sup>54</sup><span class="txtverde">33% OFF</span></p>
+                <p class="fretegratis">Frete grátis <img class="imgraio" src="imagens/iconeraio.png"><span
+                        class="txtfull">FULL</span></p>
+                <p class="inforproduto">
+                    Cabo Extensor Sleeved Lian Li Strimer Plus V2 24 Pinos Argb 5v</p>
+            </div>
+            <div class="cardproduto">
+                <div class="areaimgofertas"><img class="imgcardofertas" src="imagens/produto4.png"></div>
+                <p class="valororiginal">R$ 269</p>
+                <p class="valorpromo">R$ 187<sup>99</sup><span class="txtverde">30% OFF</span></p>
+                <p class="fretegratis">Frete grátis <img class="imgraio" src="imagens/iconeraio.png"><span
+                        class="txtfull">FULL</span></p>
+                <p class="inforproduto">
+                    Parafusadeira De Precisão Elétrica 25em1 P/ Celular Notebook</p>
+            </div>
+            <div class="cardproduto">
+                <div class="areaimgofertas"><img class="imgcardofertas" src="imagens/produto5.png"></div>
+                <p class="valororiginal">R$ 250</p>
+                <p class="valorpromo">R$ 142<sup>50</sup><span class="txtverde">43% OFF</span></p>
+                <p class="fretegratis">Frete grátis <img class="imgraio" src="imagens/iconeraio.png"><span
+                        class="txtfull">FULL</span></p>
+                <p class="inforproduto">
+                    Roteador Tp-link Archer C5 W Branco</p>
+            </div>
+            <div class="cardproduto">
+                <div class="areaimgofertas"><img class="imgcardofertas" src="imagens/produto6.png"></div>
+                <p class="valororiginal">R$ 7.279</p>
+                <p class="valorpromo">R$ 6.405<sup>52</sup><span class="txtverde">12% OFF<br>8x R$
+                        30<sup>69</sup>
+                        sem
+                        juros</span></p>
+                <p class="fretegratis">Frete grátis <img class="imgraio" src="imagens/iconeraio.png"><span
+                        class="txtfull">FULL</span></p>
+                <p class="inforproduto">
+                    Kit Estação Bluetti Eb3a 600w + Painel Solar 120w Portátil</p>
+            </div>
+            <div class="cardproduto">
+                <div class="areaimgofertas"><img class="imgcardofertas" src="imagens/produto7.png"></div>
+                <p class="valororiginal">R$ 389</p>
+                <p class="valorpromo">R$ 210<sup>54</sup><span class="txtverde">45% OFF</span></p>
+                <p class="fretegratis">Frete grátis <img class="imgraio" src="imagens/iconeraio.png"><span
+                        class="txtfull">FULL</span></p>
+                <p class="inforproduto">
+                    Suporte Braço 2 Monitor Duplo Pistão Gás Mesa Universal Vesa</p>
+            </div>
+            <div class="cardproduto">
+                <div class="areaimgofertas"><img class="imgcardofertas" src="imagens/produto8.png"></div>
+                <p class="valororiginal">R$ 389</p>
+                <p class="valorpromo">R$ 210<sup>54</sup><span class="txtverde">45% OFF</span></p>
+                <p class="fretegratis">Frete grátis <img class="imgraio" src="imagens/iconeraio.png"><span
+                        class="txtfull">FULL</span></p>
+                <p class="inforproduto">
+                    Figura de acción Funko Harry Potter Harry Potter Triwizard with golden egg 10865 de Funko Pop!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- barra inferior -->
+    <div class="container4">
+        <div class="cardfooter">
+            <div class="cardfooter2">
+                <img class="imgcardfooter" src="imagens/payment.svg" alt="pagamentos">
+                <h5 class="info-subtitle">Escolha como pagar</h5>
+                <p>Com o Mercado Pago, você paga com cartão, boleto ou Pix. Você também pode pagar em até 12x no boleto com o Mercado Crédito.</p>
+                <a href="#">Como pagar com Mercado Pago</a>
+            </div>
+            <div class="cardfooter2">
+                <img class="imgcardfooter" src="imagens/shipping.svg" alt="frete-gratis">
+                <h5 class="info-subtitle">Frete grátis a partir de R$ 79</h5>
+                <p>Ao se cadastrar no Mercado Livre, você tem frete grátis em milhares de produtos.</p>
+            </div>
+            <div class="cardfooter2">
+                <img class="imgcardfooter" src="imagens/protected.svg" alt="seguranca">
+                <h5 class="info-subtitle">Segurança, do início ao fim</h5>
+                <p>Você não gostou do que comprou? Devolva! No Mercado Livre não há nada que você não possa fazer, porque você está sempre protegido.</p>
+                <a href="#">Como te protegemos</a>
+            </div>
+        </div>
+
+        <div>
+            <p class="text-sm">
+                Copyright &copy; 2022-2024 mptech.com.br LTDA.<br>
+                Achou algum problema, bug ou erro? <a href="https://wa.me/13159636741" target="_blank" class="contateme">Contate-me</a>
+            </p>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>

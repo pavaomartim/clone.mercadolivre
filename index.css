@@ -1,0 +1,787 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #EBEBEB;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    /*barradenavegacao*/
+    .areabarranav {
+        margin: 0px !important;
+    }
+
+    .arealogo {
+        width: 100px;
+        height: 43px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 10px !important;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+
+    #imglogo {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        margin-right: 0px;
+        object-fit: contain;
+    }
+
+    .areabarradepesquisa {
+        width: 500px !important;
+    }
+
+    #btnlupa {
+        width: 40px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imglupa {
+        width: 20px;
+        height: 20px;
+    }
+
+    .areamlplay {
+        display: none;
+    }
+
+    .arealocalizacao {
+        width: 177px;
+        margin-top: 4px !important;
+        margin-right: 10px !important;
+    }
+
+    .areamenu {
+        width: 215px !important;
+        margin-top: 4px;
+    }
+
+    .areacompra {
+       display: none !important;
+    }
+    
+    /*card redondo*/
+    .areacardredondo {
+        width: 100% !important;
+        flex-wrap: wrap !important;
+    }
+
+    .areacardredondo2 {
+        width: 50px !important;
+        height: 50px !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+
+    .imgcardredondo {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .infocardredondo, .categoria {
+        width: 50px !important;
+        font-size: 10px !important;
+    }
+
+    /*card ofertas em destaque*/
+    .cardproduto {
+        width: 130px !important;
+        height: 330px !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+        justify-content: center !important;
+    }
+
+    .areaimgofertas {
+        width: 130px !important;
+        height: 130px !important;
+    }
+
+    .btnoferta {
+        font-size: 9px !important;
+    }
+
+    .valororiginal {
+        font-size: 10px !important;
+    }
+
+    .valorpromo {
+        font-size: 15px !important;
+    }
+
+    sup {
+        font-size: 9px !important;
+    }
+
+    .textoverde {
+        font-size: 10px !important;
+    }
+
+    .fretegratis {
+        font-size: 11px !important;
+    }
+
+    .txtfull {
+        font-size: 9px !important;
+    }
+
+    .inforproduto {
+        font-size: 11px !important;
+    }
+
+    /*barra inferior*/
+    .cardfooter {
+        width: 200px !important;
+        flex-wrap: wrap !important;
+        flex-direction: column !important;
+    }
+
+    .cardfooter2 {
+        width: 200px !important;
+        height: 50px !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+        margin: 0px !important;
+        margin-top: 20px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding: 0px !important;
+    }
+
+    .imgcardfooter {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .info-subtitle {
+        width: 200px !important;
+        font-size: 14px !important;
+    }
+}
+
+/*barra de navegacao*/
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+}
+
+.barradenavegacao {
+    width: 100%;
+    background-color: #ffe600;
+    background-color: linear-gradient();
+    display: flex;
+    justify-content: left;
+    flex-grow: 1;
+    flex-basis: 200;
+    overflow: hidden;
+    /*
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    */
+}
+
+.cardnav {
+    display: table-row;
+    margin: 0 auto;
+    justify-content: left;
+    flex-grow: 1;
+    flex-basis: 200;
+    /*
+    width: 100vw;
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 200;
+    */
+}
+
+.areabarranav {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    /*
+    width: 100%;
+    height: 50px;
+    */
+}
+
+.mrg {
+    margin-top: 5px;
+}
+
+.mrgtop {
+    margin-top: 10px;
+}
+
+/*logo*/
+.arealogo img {
+    width: 177px;
+    height: 43px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 25px;
+}
+
+#imglogo {
+    width: 177px;
+    height: 43px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+/*barra de pesquisa*/
+.areabarradepesquisa {
+    width: 600px;
+    height: 43px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#barradepesquisa {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 2px 0 0 2px;
+    font-size: 12pt;
+    font-family: Arial;
+    cursor: text;
+    padding: 10px;
+}
+
+#barradepesquisa:hover {
+    border: 1px solid #3483fa;
+}
+
+#btnlupa {
+    background-color: #ffffff;
+    border: #ffffff;
+    display: flex;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+    padding: 12px;
+}
+
+#imglupa {
+    width: 100%;
+    height: 100%;
+}
+
+/*mercado play*/
+.areamlplay img {
+    width: 360px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+#imgmlplay {
+    width: 360px;
+    height: 43px;
+    cursor: pointer;
+}
+
+/*
+.areamercadoplay {
+    width: 400px;
+    height: 50px;
+    text-align: ;
+    margin-top: 5px;
+}
+
+.mercadoplay {
+    background-color: green;
+    height: 68%;
+    margin-left: 0px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+#imgmercadoplay {
+    width: 400px;
+    height: 50px;
+}
+*/
+
+/*localização e endereço*/
+.arealocalizacao {
+    width: 176px;
+    height: 32px;
+    display: flex;
+    justify-content: left;
+    border: 1px solid transparent;
+    margin-top: 1px;
+    margin-right: 25px;
+}
+
+#arealocalizacao {
+    width: 90%;
+    height: auto;
+    background-color: #00000000;
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+    border: 7px solid transparent;
+}
+
+.arealocalizacao:hover {
+    width: 176px;
+    height: 31px;
+    justify-content: center;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+}
+
+#imglocalizacao {
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+/*menu do centro*/
+.areamenu {
+    width: 600px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.txtmenu {
+    font-size: 11pt;
+    font-family: Arial;
+    color: #6D6C6F;
+    margin-top: 2.2%;
+    margin-left: 1.5%;
+    margin-right: 5px;
+    opacity: .7;
+    padding-right: 3%;
+}
+
+.txtmenu:hover {
+    color: #000000;
+    transition: 1s;
+    opacity: .9;
+    cursor: pointer;
+}
+
+/*compra e conta*/
+.areacompra {
+    width: 360px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-bottom: 17px;
+}
+
+.txtcompra {
+    font-size: 12pt;
+    font-family: Arial;
+    color: #1b1a1b;
+    margin-top: 7px;
+    padding-top: 3%;
+    cursor: pointer;
+}
+
+.blocoareacompra {
+    margin-right: 6%;
+    margin-left: 2%;
+}
+
+#imgcarrinho {
+    width: 40px;
+    height: 20px;
+    justify-content: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.tamanhocarrinho {
+    width: 50%;
+}
+
+/*slides*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    width: 100%;
+    height: 293px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 200;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider li:nth-child(4) label {
+    left: 100px;
+}
+
+.slider li:nth-child(5) label {
+    left: 130px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked~img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+/*card redondo*/
+.container2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.areacardredondo {
+    width: 900px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.mrgcardredondo {
+    justify-content: center;
+    align-items: center;
+}
+
+.areacardredondo2 {
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.imgcardredondo {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+}
+
+.infocardredondo {
+    width: 90px;
+    color: #615e5e;
+    font-family: verdana;
+    font-size: 12px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.categoria {
+    width: 90px;
+    font-size: 7pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.txtcardredondo {
+    margin-top: 0px;
+    text-align: center;
+}
+
+/*card produtos em oferta*/
+.container3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.areaproduto {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-bottom: 0px;
+}
+
+.cardproduto {
+    width: 207.4px;
+    height: 405.2px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cardproduto:hover {
+    box-shadow: 0 7px 11px 0 rgba(0, 0, 0, .1), 0 2px 4px 0 rgba(0, 0, 0, .1);
+}
+
+.areaimgofertas {
+    width: 207px;
+    height: 220px;
+    margin: auto;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.imgcardofertas {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/*titulos e veja mais*/
+.txt {
+    font-family: Helvetica;
+    font-size: 13pt;
+    color: #6D6C6F;
+    margin-bottom: 0px;
+}
+
+.txtofertas {
+    justify-content: left;
+}
+
+/* informações abaixo da imagem dos cards*/
+.valororiginal {
+    font-family: Helvetica;
+    font-size: 12px;
+    color: #858585;
+    text-decoration: line-through 1px;
+    margin-top: 2px;
+    margin-left: 20px;
+    margin-bottom: 3px;
+}
+
+.valorpromo {
+    font-family: Helvetica;
+    font-size: 20px;
+    color: black;
+    margin-top: 1px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+sup {
+    font-size: 10px;
+}
+
+.txtverde {
+    font-family: Arial;
+    font-size: 13px;
+    color: #12AC5C;
+    margin-left: 5px;
+}
+
+.fretegratis {
+    font-family: Arial;
+    font-size: 14px;
+    color: #00A650;
+    margin-top: 2px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.imgraio {
+    width: 15px;
+    height: 12px;
+}
+
+.txtfull {
+    font-family: Arial;
+    font-size: 13px;
+    font-style: italic;
+    font: bold;
+    font-weight: 800;
+}
+
+.inforproduto {
+    font-family: verdana;
+    font-size: 12px;
+    color: #615e5e;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btnoferta {
+    font: bold;
+    font-size: 12px;
+    background-color: #3A81F6;
+    color: #ffffff;
+    border-radius: 3px;
+    border: none;
+    margin-left: 20px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+/*barra inferior*/
+.container4 {
+    width: 100%;
+    height: 100%;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    overflow-x: hidden;
+}
+
+.cardfooter {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.cardfooter2 {
+    width: 300px;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    border-radius: 5px;
+    flex: 1;
+    padding: 10px;
+}
+
+.imgcardfooter {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.info-subtitle {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cardfooter2 p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.cardfooter2 a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.cardfooter2 a:hover {
+    text-decoration: underline;
+}
+
+.text-sm {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contateme {
+    color: #666;
+}
